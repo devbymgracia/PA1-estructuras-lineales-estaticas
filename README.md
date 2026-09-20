@@ -2,6 +2,7 @@
 
 > **Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial  
 > **NRC:** 4682
+> **Código:** 30710
 > **Evaluación:** PA1 — Estructuras lineales estáticas  
 > **Equipo:** Grupo 3 
 
