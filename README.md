@@ -32,15 +32,17 @@ Diseñar una solución clara y sustentada técnicamente usando arreglos unidimen
 
 ```
 PA1-estructuras-lineales-estaticas/
-└── README.md
+├── README.md
+└── informe-PA1.pdf
 ```
 
 ## 4. Cómo revisar
 
 **Pasos de revisión:**
 1. Leer el desarrollo de cada actividad en la sección 5 de este README.
-2. Consultar la matriz de participación en la sección 6.
-3. Ver el video de exposición (sección 7).
+2. Revisar el informe en PDF (informe-PA1.pdf) como respaldo.
+3. Consultar la matriz de participación en la sección 6.
+4. Ver el video de exposición (sección 7).
 
 
 ## 5. Desarrollo de la evaluación
@@ -143,7 +145,7 @@ Los algoritmos sobre vectores y el recorrido de matrices por filas y columnas pe
 ---
 
 MENSAJE PARA EL GRUPO 
-Ya está creado el repositorio: [LINK]. Cada uno debe:
+Ya está creado el repositorio: https://github.com/devbymgracia/PA1-estructuras-lineales-estaticas/tree/main. Cada uno debe:
 1. Entrar al README.md y hacer clic en el lápiz (Edit).
 2. Pegar su actividad en la sección 5, debajo de su título.
 3. Llenar su nombre, rol y aporte en la sección 1, y su fila en la sección 6 (con evidencia real).
