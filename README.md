@@ -23,7 +23,9 @@ Una coordinación académica necesita organizar información de talleres estudia
 Diseñar una solución clara y sustentada técnicamente usando arreglos unidimensionales y matrices, aplicando algoritmos de búsqueda de valores extremos, inserción, ordenamiento y recorrido de matrices.
 
 **Solución desarrollada:**  
-
+- **Análisis y selección de estructura (Actividad 1):** [resumen]
+- **Vectores (Actividad 2):** [resumen]
+- **Matrices (Actividad 3):** [resumen]
 **Matrices especiales (Actividad 4):** se explicaron la matriz cuadrada y la matriz poco densa, y se justificó con un ejemplo del caso académico que una matriz poco densa es más conveniente cuando la mayoría de las combinaciones de aula y horario no tienen estudiantes.
 
 ## 3. Estructura del repositorio
@@ -37,9 +39,8 @@ PA1-estructuras-lineales-estaticas/
 
 **Pasos de revisión:**
 1. Leer el desarrollo de cada actividad en la sección 5 de este README.
-2. Revisar los archivos por actividad en la carpeta `actividades/`.
-3. Consultar el pseudocódigo en `pseudocodigo/` y los diagramas en `diagramas/`.
-4. Ver el video de exposición (sección 7).
+2. Consultar la matriz de participación en la sección 6.
+3. Ver el video de exposición (sección 7).
 
 
 ## 5. Desarrollo de la evaluación
@@ -140,5 +141,14 @@ Para i desde 0 hasta 3:
 Los algoritmos sobre vectores y el recorrido de matrices por filas y columnas permiten registrar, consultar y organizar la información de inscritos y de ocupación de aulas de forma ordenada.
 
 ---
+
+MENSAJE PARA EL GRUPO 
+Ya está creado el repositorio: [LINK]. Cada uno debe:
+1. Entrar al README.md y hacer clic en el lápiz (Edit).
+2. Pegar su actividad en la sección 5, debajo de su título.
+3. Llenar su nombre, rol y aporte en la sección 1, y su fila en la sección 6 (con evidencia real).
+4. Agregar 1 conclusión sobre su actividad en la sección 8, borrando los textos entre corchetes que sobren.
+5. Hacer Commit changes con su usuario.
+Fecha límite: martes, 22 de septiembre . De ahí,  grabar el video (cada uno de sus partes), todos con cámara prendida.
 
 **Última actualización:** [DD/MM/AAAA]
