@@ -11,7 +11,7 @@
 | Integrante | Rol | Aporte principal |
 |---|---|---|
 | Mariagracia Cadillo Jiménez | Coordinador | Repositorio- READ ME- Actividad 4|
-| Mauricio Del Carpio Torres| [Rol] | [Aporte] |
+| Mauricio Del Carpio Torres| Integrante | Actividad 3 |
 | [Nombre 3] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
