@@ -487,7 +487,7 @@ Para i desde 0 hasta 3:
 | Mariagracia Cadillo Jiménez  | Alta | Media | Alta | Sí | Creó el repositorio, redactó la Actividad 4, armó el README base y expuso en el video. Commits en el historial del repositorio. |
 | [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc] |
 | Diana Romero Pariona | Alta] | Alta | Alta | Sí | Expuso y desarrolló el informe |
-| [Cristian Martin Correa Barriga | Alta | Media | Alta | Sí | Desarrollo la actividad 1 y expuso |
+| Cristian Martin Correa Barriga | Alta | Media | Alta | Sí | Desarrollo la actividad 1 y expuso |
 
 ## 7. Video de exposición
 
