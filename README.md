@@ -50,6 +50,51 @@ PA1-estructuras-lineales-estaticas/
 
 ### Actividad 1. Análisis del problema y selección de estructura
 
+ 1.1 Diferencia entre estructura estática y dinámica
+ Una estática se establece previamente y normalmente no presenta cambios durante la ejecución del programa, por otro lado en la dinámica se le puede modificar su tamaño durante en la ejecución del programa ya sea agregar o eliminar elementos según las necesidades. Un ejemplo son las listas enlazadas.
+
+ Diferencias:
+
+  Estructura estática:                                                               Estructura dinámica:
+
+                                                                                     
+ -Tamaño definido previamente.                                                      - Puede cambiar el tamaño durante la ejecucion
+ -Ocupa un espacio de memoria previamente establecido                               - Puedes solicitar o liberar memoria según sea necesario 
+ -Es adecuada cuando conocemos aproximadamente la cantidad de datos                 - Es adecuada cuando la cantidad de datos puede variar
+
+ 
+ 1.2 ¿Por qué utilizar arreglos y matrices? 
+  Porque resulta adecuado utilizar los arreglos y matrices en el    caso que trabaja con cantidades de estudiantes previamente organizadas.
+
+- Los arreglos permiten almacenar información en posiciones identificadas mediante índices.
+
+-Las matrices representan la información organizada mediante columnas y filas.
+
+ 1.3 Relación entre dato, algoritmo y estructura de datos 
+
+ Dato: es la información que se almacena en el sistema.
+
+ Estructura de datos: Es la forma que organizamos y almacenamos los datos.
+
+ Algoritmo: es la agrupación de pasos que permite procesar los datos almacenados.
+
+ Ejemplo:
+
+ Dato:
+ 28 estudiantes inscritos para un taller.
+
+ Estructura:
+ Un vector que almacena las cantidades:
+
+ [28, 15, 34, 21, 19, 40, 12, 26]
+
+ Algoritmo:
+ El procedimiento que recorre el vector para encontrar cual es el mayor y quien es el menor.
+
+ Datos >>> Estructura de datos >>> Algoritmo >>> Resultado.
+
+
+
 [Pegar aquí el desarrollo de la Actividad 1.]
 
 ### Actividad 2. Modelado y operaciones con vectores
