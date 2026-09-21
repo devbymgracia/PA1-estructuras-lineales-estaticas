@@ -54,14 +54,14 @@ PA1-estructuras-lineales-estaticas/
  Una estática se establece previamente y normalmente no presenta cambios durante la ejecución del programa, por otro lado en la dinámica se le puede modificar su tamaño durante en la ejecución del programa ya sea agregar o eliminar elementos según las necesidades. Un ejemplo son las listas enlazadas.
 
  Diferencias:
-
+  ```
   Estructura estática:                                                               Estructura dinámica:
 
                                                                                      
  -Tamaño definido previamente.                                                      - Puede cambiar el tamaño durante la ejecucion
  -Ocupa un espacio de memoria previamente establecido                               - Puedes solicitar o liberar memoria según sea necesario 
  -Es adecuada cuando conocemos aproximadamente la cantidad de datos                 - Es adecuada cuando la cantidad de datos puede variar
-
+  ```
  
  1.2 ¿Por qué utilizar arreglos y matrices? 
   Porque resulta adecuado utilizar los arreglos y matrices en el    caso que trabaja con cantidades de estudiantes previamente organizadas.
@@ -85,9 +85,9 @@ PA1-estructuras-lineales-estaticas/
 
  Estructura:
  Un vector que almacena las cantidades:
-
+ ```
  [28, 15, 34, 21, 19, 40, 12, 26]
-
+ ```
  Algoritmo:
  El procedimiento que recorre el vector para encontrar cual es el mayor y quien es el menor.
 
