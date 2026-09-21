@@ -11,7 +11,7 @@
 | Integrante | Rol | Aporte principal |
 |---|---|---|
 | Mariagracia Cadillo Jiménez | Coordinador | Repositorio- READ ME- Actividad 4|
-| [Nombre 2] | [Rol] | [Aporte] |
+| Mauricio Del Carpio Torres| [Rol] | [Aporte] |
 | [Nombre 3] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
@@ -58,7 +58,47 @@ PA1-estructuras-lineales-estaticas/
 
 ### Actividad 3. Matrices y recorrido completo de datos
 
-[Pegar aquí el desarrollo de la Actividad 3.]
+### 3.1 Propuesta de matriz 
+
+    {20, 15,  0, 25, 10},
+    { 0, 18, 22,  0, 30},
+    {12,  0, 19, 14,  0},
+    {28, 24,  0, 16, 20}
+
+### 3.2 Índices
+
+Filas (i): Representan las Aulas del edificio (índices 0 a 3).
+Columnas (j): Representan los Bloques Horarios (índices 0 a 4).
+Uso: El acceso ocupacion[i][j] indica la cantidad exacta de estudiantes asignados al Aula $i+1$ en el Horario $j+1$.
+
+
+### 3.3 Total de estudiantes por aula 
+
+Para calcular el total de estudiantes por aula, se realiza un recorrido sumando los valores de cada fila:
+Aula 1: 20 + 15 + 0 + 25 + 10 = 70 estudiantes
+Aula 2: 0 + 18 + 22 + 0 + 30 = 70 estudiantes
+Aula 3: 12 + 0 + 19 + 14 + 0 = 45 estudiantes
+Aula 4: 28 + 24 + 0 + 16 + 20 = 88 estudiantes
+
+### 3.4 Total de estudiantes por horario 
+
+Para obtener la afluencia en cada bloque horario, se realiza una suma por columnas:
+Horario 1: 20 + 0 + 12 + 28 = 60 estudiantes
+Horario 2: 15 + 18 + 0 + 24 = 57 estudiantes
+Horario 3: 0 + 22 + 19 + 0 = 41 estudiantes
+Horario 4: 25 + 0 + 14 + 16 = 55 estudiantes
+Horario 5: 10 + 30 + 0 + 20 = 60 estudiantes
+
+### 3.5 Celda con mayor ocupación 
+
+Al evaluar todos los elementos de la matriz, el valor máximo encontrado es:
+Mayor ocupación: 30 estudiantes
+Ubicación: Aula 2, Horario 5 (Posición en la matriz: ocupacion[1][4]).
+    
+### 3.6 ¿Por qué se recorren varias posiciones?
+
+Se deben recorrer múltiples posiciones porque las matrices son estructuras bidimensionales. Para realizar cualquier cálculo de consolidación (como sumar filas/columnas o buscar el elemento con mayor/menor valor), el algoritmo debe evaluar individualmente la intersección de cada celda [i][j] mediante ciclos anidados y así garantizar la revisión completa del conjunto de datos.
+
 
 ### Actividad 4. Matrices especiales y decisión técnica
 
