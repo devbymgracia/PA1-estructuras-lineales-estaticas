@@ -13,7 +13,7 @@
 | Mariagracia Cadillo Jiménez | Coordinador | Repositorio- READ ME- Actividad 4|
 | Mauricio Del Carpio Torres| Integrante | Actividad 3 |
 | Diana Romero Pariona | Integrante | Actividad 2 |
-| [Nombre 4] | [Rol] | [Aporte] |
+| Cristian Martin Correa Barriga | Integrante | Actividad 1 |
 
 ## 2. Descripción y objetivo
 
@@ -90,9 +90,9 @@ PA1-estructuras-lineales-estaticas/
  ```
  Algoritmo:
  El procedimiento que recorre el vector para encontrar cual es el mayor y quien es el menor.
-
+ ```
  Datos >>> Estructura de datos >>> Algoritmo >>> Resultado.
-
+ ```
 
 
 [Pegar aquí el desarrollo de la Actividad 1.]
