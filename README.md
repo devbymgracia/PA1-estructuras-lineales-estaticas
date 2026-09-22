@@ -469,8 +469,8 @@ Para i desde 0 hasta 3:
 
 ## 8. Conclusiones
 
-- [Conclusión 1]
-- [Conclusión 2]
+- Una matriz poco densa es más conveniente que una completa cuando la mayoría de las combinaciones de aula y horario no tienen estudiantes, ya que la representación compacta ahorra memoria; si la ocupación fuera alta, la matriz completa sería mejor.
+- Los arreglos y las matrices son adecuados para esta primera etapa porque el tamaño de los datos es conocido (8 talleres, 4 aulas y 5 bloques horarios), lo que permite acceder a cada dato directamente por su índice.
 Los algoritmos sobre vectores y el recorrido de matrices por filas y columnas permiten registrar, consultar y organizar la información de inscritos y de ocupación de aulas de forma ordenada.
 
 ---
