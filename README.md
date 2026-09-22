@@ -24,9 +24,9 @@ Una coordinación académica necesita organizar información de talleres estudia
 Diseñar una solución clara y sustentada técnicamente usando arreglos unidimensionales y matrices, aplicando algoritmos de búsqueda de valores extremos, inserción, ordenamiento y recorrido de matrices.
 
 **Solución desarrollada:**  
-- **Análisis y selección de estructura (Actividad 1):** [resumen]
-- **Vectores (Actividad 2):** [resumen]
-- **Matrices (Actividad 3):** [resumen]
+- **Análisis y selección de estructura (Actividad 1):** se diferenciaron las estructuras estáticas y dinámicas, y se justificó el uso de arreglos y matrices por tratarse de datos de tamaño conocido.
+- **Vectores (Actividad 2):** se modeló el vector de inscritos por taller, con algoritmos para hallar el mayor y el menor, insertar un valor y ordenar con el método Burbuja, analizando su costo en el mejor y peor caso.
+- **Matrices (Actividad 3):** se propuso una matriz de 4 aulas x 5 bloques horarios para calcular totales por aula, totales por horario y la celda de mayor ocupación.
 **Matrices especiales (Actividad 4):** se explicaron la matriz cuadrada y la matriz poco densa, y se justificó con un ejemplo del caso académico que una matriz poco densa es más conveniente cuando la mayoría de las combinaciones de aula y horario no tienen estudiantes.
 
 ## 3. Estructura del repositorio
@@ -95,213 +95,194 @@ PA1-estructuras-lineales-estaticas/
  ```
 
 
-[Pegar aquí el desarrollo de la Actividad 1.]
 
 ### Actividad 2. Modelado y operaciones con vectores
 
- 2.1 Vector inicial
+#### 2.1 Vector inicial
 
 Se utilizará un arreglo unidimensional int [ ], para almacenar la cantidad de estudiantes inscritos en cada taller.
 
+```java
 int[] inscritos = {28, 15, 34, 21, 19, 40, 12, 26};
+```
+
 codigo:
- public static void vectorInicial(int[] vector) {
 
+```java
+public static void vectorInicial(int[] vector) {
 
-        System.out.println("\n3.1 VECTOR INICIAL");
-        System.out.println("----------------------------------------------");
+    System.out.println("\n3.1 VECTOR INICIAL");
+    System.out.println("----------------------------------------------");
 
+    System.out.println("Cantidad de inscritos por taller:");
 
-        System.out.println("Cantidad de inscritos por taller:");
-
-
-        for (int i = 0; i < vector.length; i++) {
-            System.out.println(
-                    "Taller " + (i + 1) + ": " + vector[i] + " inscritos"
-            );
-        }
-
-
-        System.out.println("\nVector:");
-        System.out.println(Arrays.toString(vector));
+    for (int i = 0; i < vector.length; i++) {
+        System.out.println(
+                "Taller " + (i + 1) + ": " + vector[i] + " inscritos"
+        );
     }
- 2.2 Representación gráfica 
+
+    System.out.println("\nVector:");
+    System.out.println(Arrays.toString(vector));
+}
+```
+
+#### 2.2 Representación gráfica
 
 El programa genera una pequeña grafica utilizando (*). Por ejemplo, el taller con 12 inscritos tendrá 12 asteriscos.
 
- public static void representacionGrafica(int[] vector) {
+```java
+public static void representacionGrafica(int[] vector) {
 
+    System.out.println("\n3.2 REPRESENTACIÓN GRÁFICA");
+    System.out.println("----------------------------------------------");
 
-        System.out.println("\n3.2 REPRESENTACIÓN GRÁFICA");
-        System.out.println("----------------------------------------------");
+    for (int i = 0; i < vector.length; i++) {
 
+        System.out.print("Taller " + (i + 1) + " | ");
 
-        for (int i = 0; i < vector.length; i++) {
-
-
-            System.out.print("Taller " + (i + 1) + " | ");
-
-
-            for (int j = 0; j < vector[i]; j++) {
-                System.out.print("*");
-            }
-
-
-            System.out.println(" (" + vector[i] + ")");
+        for (int j = 0; j < vector[i]; j++) {
+            System.out.print("*");
         }
-    }
 
-  2.3 Algoritmo para encontrar el mayor y menor 
+        System.out.println(" (" + vector[i] + ")");
+    }
+}
+```
+
+#### 2.3 Algoritmo para encontrar el mayor y menor
 
 El programa encontrará:
 
 Mayor: 40 inscritos -> Taller 6
 Menor: 12 inscritos -> Taller 7
 
+```java
 public static void encontrarMayorYMenor(int[] vector) {
 
+    System.out.println("\n3.3 MAYOR Y MENOR");
+    System.out.println("----------------------------------------------");
 
-        System.out.println("\n3.3 MAYOR Y MENOR");
-        System.out.println("----------------------------------------------");
+    int mayor = vector[0];
+    int menor = vector[0];
 
+    int posicionMayor = 0;
+    int posicionMenor = 0;
 
-        int mayor = vector[0];
-        int menor = vector[0];
+    for (int i = 1; i < vector.length; i++) {
 
-
-        int posicionMayor = 0;
-        int posicionMenor = 0;
-
-
-        for (int i = 1; i < vector.length; i++) {
-
-
-            if (vector[i] > mayor) {
-                mayor = vector[i];
-                posicionMayor = i;
-            }
-
-
-            if (vector[i] < menor) {
-                menor = vector[i];
-                posicionMenor = i;
-            }
+        if (vector[i] > mayor) {
+            mayor = vector[i];
+            posicionMayor = i;
         }
 
-
-        System.out.println(
-                "Mayor cantidad de inscritos: " + mayor +
-                " estudiantes"
-        );
-
-
-        System.out.println(
-                "Se encuentra en el Taller " +
-                (posicionMayor + 1)
-        );
-
-
-        System.out.println(
-                "Menor cantidad de inscritos: " + menor +
-                " estudiantes"
-        );
-
-
-        System.out.println(
-                "Se encuentra en el Taller " +
-                (posicionMenor + 1)
-        );
+        if (vector[i] < menor) {
+            menor = vector[i];
+            posicionMenor = i;
+        }
     }
- 2.4 Algoritmo para insertar un valor 
+
+    System.out.println(
+            "Mayor cantidad de inscritos: " + mayor +
+            " estudiantes"
+    );
+
+    System.out.println(
+            "Se encuentra en el Taller " +
+            (posicionMayor + 1)
+    );
+
+    System.out.println(
+            "Menor cantidad de inscritos: " + menor +
+            " estudiantes"
+    );
+
+    System.out.println(
+            "Se encuentra en el Taller " +
+            (posicionMenor + 1)
+    );
+}
+```
+
+#### 2.4 Algoritmo para insertar un valor
 
 Para demostrar la integración, se agregará el valor 30 en la posición 4.
 
 El vector pasa de:
- 	[28, 15, 34, 21, 19, 40, 12, 26] 
-a: 
+[28, 15, 34, 21, 19, 40, 12, 26]
+a:
 [28, 15, 34, 21, 30, 19, 40, 12, 26]
 
+```java
 public static int[] insertarValor(int[] vector, int valor, int posicion) {
 
+    System.out.println("\n3.4 INSERTAR UN VALOR");
+    System.out.println("----------------------------------------------");
 
-        System.out.println("\n3.4 INSERTAR UN VALOR");
-        System.out.println("----------------------------------------------");
+    System.out.println("Vector original:");
+    System.out.println(Arrays.toString(vector));
 
+    System.out.println(
+            "Se insertará el valor " + valor +
+            " en la posición " + posicion
+    );
 
-        System.out.println("Vector original:");
-        System.out.println(Arrays.toString(vector));
+    // Crear un nuevo vector con una posición adicional
+    int[] nuevoVector = new int[vector.length + 1];
 
-
-        System.out.println(
-                "Se insertará el valor " + valor +
-                " en la posición " + posicion
-        );
-
-
-        // Crear un nuevo vector con una posición adicional
-        int[] nuevoVector = new int[vector.length + 1];
-
-
-        // Copiar los elementos antes de la posición
-        for (int i = 0; i < posicion; i++) {
-            nuevoVector[i] = vector[i];
-        }
-
-
-        // Insertar el nuevo valor
-        nuevoVector[posicion] = valor;
-
-
-        // Desplazar los elementos restantes
-        for (int i = posicion; i < vector.length; i++) {
-            nuevoVector[i + 1] = vector[i];
-        }
-
-
-        System.out.println("Vector después de insertar:");
-        System.out.println(Arrays.toString(nuevoVector));
-
-
-        return nuevoVector;
+    // Copiar los elementos antes de la posición
+    for (int i = 0; i < posicion; i++) {
+        nuevoVector[i] = vector[i];
     }
 
- 2.5 Algoritmo de ordenamiento
+    // Insertar el nuevo valor
+    nuevoVector[posicion] = valor;
+
+    // Desplazar los elementos restantes
+    for (int i = posicion; i < vector.length; i++) {
+        nuevoVector[i + 1] = vector[i];
+    }
+
+    System.out.println("Vector después de insertar:");
+    System.out.println(Arrays.toString(nuevoVector));
+
+    return nuevoVector;
+}
+```
+
+#### 2.5 Algoritmo de ordenamiento
 
 En este caso utilizaré el método Burbuja para ordenar de menor a mayor.
 
- public static void ordenarVector(int[] vector) {
+```java
+public static void ordenarVector(int[] vector) {
 
+    System.out.println("\n3.5 ALGORITMO DE ORDENAMIENTO");
+    System.out.println("----------------------------------------------");
 
-        System.out.println("\n3.5 ALGORITMO DE ORDENAMIENTO");
-        System.out.println("----------------------------------------------");
+    System.out.println("Vector antes de ordenar:");
+    System.out.println(Arrays.toString(vector));
 
+    // Ordenamiento Burbuja
+    for (int i = 0; i < vector.length - 1; i++) {
 
-        System.out.println("Vector antes de ordenar:");
-        System.out.println(Arrays.toString(vector));
+        for (int j = 0; j < vector.length - 1 - i; j++) {
 
+            if (vector[j] > vector[j + 1]) {
 
-        // Ordenamiento Burbuja
-        for (int i = 0; i < vector.length - 1; i++) {
-
-
-            for (int j = 0; j < vector.length - 1 - i; j++) {
-
-
-                if (vector[j] > vector[j + 1]) {
-
-
-                    int auxiliar = vector[j];
-                    vector[j] = vector[j + 1];
-                    vector[j + 1] = auxiliar;
-                }
+                int auxiliar = vector[j];
+                vector[j] = vector[j + 1];
+                vector[j + 1] = auxiliar;
             }
         }
-
-
-        System.out.println("Vector ordenado de menor a mayor:");
-        System.out.println(Arrays.toString(vector));
     }
-2.6 Costo aproximado del ordenamiento 
+
+    System.out.println("Vector ordenado de menor a mayor:");
+    System.out.println(Arrays.toString(vector));
+}
+```
+
+#### 2.6 Costo aproximado del ordenamiento
 
 En nuestro caso usaremos el método burbuja, que compara elementos y los intercambia cuando están en el orden incorrecto. Por ejemplo:
 
@@ -320,67 +301,59 @@ PEOR CASO:
 El peor caso ocurre cuando los elementos están ordenado de mayor a menor. En este caso practicamente todos los elementos necesitan ser intercambiados y el algoritmo realiza muchas comparaciones.
 Costo aproximado: O(n²) o sea n(n - 1) / 2
 
+```java
 public static void costoOrdenamiento(int[] vector) {
-
 
     System.out.println("\n3.6 COSTO APROXIMADO DEL ORDENAMIENTO");
     System.out.println("----------------------------------------------");
 
-
     int n = vector.length;
-
 
     // MEJOR CASO
     System.out.println("Mejor caso:");
     System.out.println("El vector ya esta ordenado.");
     System.out.println("Costo aproximado: O(n)");
 
-
     // PEOR CASO
     System.out.println("\nPeor caso:");
 
-
     int comparaciones = 0;
-
 
     for (int i = 0; i < n - 1; i++) {
 
-
         for (int j = 0; j < n - 1 - i; j++) {
-
 
             comparaciones++;
         }
     }
 
-
     System.out.println("Cantidad de elementos: " + n);
     System.out.println("Comparaciones aproximadas: " + comparaciones);
     System.out.println("Costo aproximado: O(n²)");
-
 
     System.out.println(
             "\nEn el mejor caso, el vector ya esta ordenado " +
             "y se necesita menos trabajo."
     );
 
-
     System.out.println(
             "En el peor caso, el vector esta desordenado " +
             "y se realizan muchas comparaciones e intercambios."
     );
 }
-}
+```
 
 
 ### Actividad 3. Matrices y recorrido completo de datos
 
-### 3.1 Propuesta de matriz 
+### 3.1 Propuesta de matriz
 
-    {20, 15,  0, 25, 10},
-    { 0, 18, 22,  0, 30},
-    {12,  0, 19, 14,  0},
-    {28, 24,  0, 16, 20}
+```java
+{20, 15,  0, 25, 10},
+{ 0, 18, 22,  0, 30},
+{12,  0, 19, 14,  0},
+{28, 24,  0, 16, 20}
+```
 
 ### 3.2 Índices
 
@@ -484,10 +457,10 @@ Para i desde 0 hasta 3:
 
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
-| Mariagracia Cadillo Jiménez  | Alta | Media | Alta | Sí | Creó el repositorio, redactó la Actividad 4, armó el README base y expuso en el video. Commits en el historial del repositorio. |
-| [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc] |
+| Mariagracia Cadillo Jiménez  | Alta | Alta | Alta | Sí | Creó el repositorio, creo el informe, redactó la Actividad 4, armó el README base y expuso en el video. Commits en el historial del repositorio. |
+| Mauricio Del Carpio Torres | Alta | Alta | Alta | Sí | Desarrollo la activdad 3 y expuso |
 | Diana Romero Pariona | Alta] | Alta | Alta | Sí | Expuso y desarrolló el informe |
-| Cristian Martin Correa Barriga | Alta | Media | Alta | Sí | Desarrollo la actividad 1 y expuso |
+| Cristian Martin Correa Barriga | Alta | Alta | Alta | Sí | Desarrollo la actividad 1 y expuso |
 
 ## 7. Video de exposición
 
