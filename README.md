@@ -464,7 +464,8 @@ Para i desde 0 hasta 3:
 
 ## 7. Video de exposición
 
-**Video:** (https://canva.link/3q2wlnwkt1ayt2c)
+**Video de Youtube:** https://youtu.be/aGM45MsPJF8
+
 
 
 ## 8. Conclusiones
