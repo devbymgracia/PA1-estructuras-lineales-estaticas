@@ -464,7 +464,7 @@ Para i desde 0 hasta 3:
 
 ## 7. Video de exposición
 
-**Video de YouTube:** [PEGAR AQUÍ EL ENLACE]
+**Video:** (https://canva.link/3q2wlnwkt1ayt2c)
 
 
 ## 8. Conclusiones
@@ -475,13 +475,6 @@ Los algoritmos sobre vectores y el recorrido de matrices por filas y columnas pe
 
 ---
 
-MENSAJE PARA EL GRUPO 
-Ya está creado el repositorio: https://github.com/devbymgracia/PA1-estructuras-lineales-estaticas/tree/main. Cada uno debe:
-1. Entrar al README.md y hacer clic en el lápiz (Edit).
-2. Pegar su actividad en la sección 5, debajo de su título.
-3. Llenar su nombre, rol y aporte en la sección 1, y su fila en la sección 6 (con evidencia real).
-4. Agregar 1 conclusión sobre su actividad en la sección 8, borrando los textos entre corchetes que sobren.
-5. Hacer Commit changes con su usuario.
-Fecha límite: martes, 22 de septiembre . De ahí,  grabar el video (cada uno de sus partes), todos con cámara prendida.
 
-**Última actualización:** [DD/MM/AAAA]
+
+
