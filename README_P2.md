@@ -11,8 +11,8 @@
 |---|---|---|
 | Mariagracia Cadillo Jiménez |   Coordinador | [Actividad1 |
 | Mauricio Del Carpio | Integrante | Actividad 2 |
-| [Cristian Martin Correa Barriga] | [Rol] | [Aporte] |
-| [Diana Romero Pariona] | [Rol] | [Aporte] |
+| [Cristian Martin Correa Barriga] | [Rol] | [Actividad 3] |
+| [Diana Romero Pariona] | [Rol] | [Actividad 4] |
 
 ## 2. Descripción y objetivo
 
@@ -284,7 +284,7 @@ public class NodoCircular {
 | Mariagracia Cadillo Jiménez | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
-| [Diana Romero Pariona] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Diana Romero Pariona] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 
 ## 7. Video de exposición
 
