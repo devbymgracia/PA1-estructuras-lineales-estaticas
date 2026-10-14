@@ -9,7 +9,7 @@
 
 | Integrante | Rol | Aporte principal |
 |---|---|---|
-| Mariagracia Cadillo Jiménez | [Rol] | [Aporte] |
+| Mariagracia Cadillo Jiménez |   Coordinador | [Actividad1 |
 | [Nombre 2] | [Rol] | [Aporte] |
 | [Cristian Martin Correa Barriga] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
