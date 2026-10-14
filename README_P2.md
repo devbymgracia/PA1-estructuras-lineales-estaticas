@@ -11,7 +11,7 @@
 |---|---|---|
 | Mariagracia Cadillo Jiménez | [Rol] | [Aporte] |
 | [Nombre 2] | [Rol] | [Aporte] |
-| [Nombre 3] | [Rol] | [Aporte] |
+| [Cristian Martin Correa Barriga] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
 ## 2. Descripción y objetivo
@@ -283,7 +283,7 @@ public class NodoCircular {
 |---|---|---|---|---|---|
 | Mariagracia Cadillo Jiménez | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
-| [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 
 ## 7. Video de exposición
