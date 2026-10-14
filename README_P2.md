@@ -281,7 +281,7 @@ public class NodoCircular {
 
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
-| Mariagracia Cadillo Jiménez | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Mariagracia Cadillo Jiménez | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
@@ -299,4 +299,4 @@ public class NodoCircular {
 
 ---
 
-**Última actualización:** [DD/MM/AAAA]
+**Última actualización:** [13/10/2026]
