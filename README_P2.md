@@ -11,8 +11,8 @@
 |---|---|---|
 | Mariagracia Cadillo Jiménez |   Coordinador | [Actividad1 |
 | Mauricio Del Carpio | Integrante | Actividad 2 |
-| [Cristian Martin Correa Barriga] | [Rol] | [Actividad 3] |
-| [Diana Romero Pariona] | [Rol] | [Actividad 4] |
+| [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 3] |
+| [Diana Romero Pariona] | [Integrante] | [Actividad 4] |
 
 ## 2. Descripción y objetivo
 
