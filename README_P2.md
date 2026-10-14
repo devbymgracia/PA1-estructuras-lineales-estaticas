@@ -3,7 +3,7 @@
 > **Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial  
 > **Código:** 30710  
 > **Evaluación:** PA2 — Listas enlazadas  
-> **Equipo:** Grupo 3  
+> **Equipo:** Grupo 6  
 
 ## 1. Integrantes
 
