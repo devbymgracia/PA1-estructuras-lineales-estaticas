@@ -3,7 +3,7 @@
 > **Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial  
 > **NRC:** 4682
 > **Código:** 30710
-> **Evaluación:** PA1 — Estructuras lineales estáticas  
+> **Evaluación:** PA2 — Estructuras lineales estáticas  
 > **Equipo:** Grupo 3 
 
 ## 1. Integrantes
@@ -12,7 +12,7 @@
 |---|---|---|
 | Mariagracia Cadillo Jiménez | Coordinador | Repositorio- READ ME- Actividad 4|
 | Mauricio Del Carpio Torres| Integrante | Actividad 3 |
-| Diana Romero Pariona | Integrante | Actividad 2 |
+| Diana Romero Pariona | Integrante | Actividad 4 |
 | Cristian Martin Correa Barriga | Integrante | Actividad 1 |
 
 ## 2. Descripción y objetivo
@@ -390,67 +390,22 @@ Ubicación: Aula 2, Horario 5 (Posición en la matriz: ocupacion[1][4]).
 Se deben recorrer múltiples posiciones porque las matrices son estructuras bidimensionales. Para realizar cualquier cálculo de consolidación (como sumar filas/columnas o buscar el elemento con mayor/menor valor), el algoritmo debe evaluar individualmente la intersección de cada celda [i][j] mediante ciclos anidados y así garantizar la revisión completa del conjunto de datos.
 
 
-### Actividad 4. Matrices especiales y decisión técnica
+ACTIVIDAD 4. LISTAS DOBLES Y CIRCULARES
 
-#### 4.1 Matriz cuadrada
+4.1 Caso planteado - Lista doble
 
-Una matriz cuadrada es aquella que tiene la misma cantidad de filas y columnas (n x n).
+Se propone utilizar una lista doble para administrar las tareas registradas en el sistema. Cada tarea estará conectada con la tarea anterior y la siguiente, lo que permitirá recorrer la lista en ambos sentidos.
+Por ejemplo, si el sistema contiene las tareas Diseño, Programación, Pruebas y Entrega, el usuario podrá avanzar hacia la siguiente tarea o regresar a la anterior de manera sencilla.
 
-```
-[ 1  2  3 ]
-[ 4  5  6 ]
-[ 7  8  9 ]
-```
+La lista doble es más adecuada que una lista simple porque permite desplazarse hacia adelante y hacia atrás sin tener que comenzar desde el primer nodo para regresar a una tarea anterior.
 
-#### 4.2 Matriz poco densa
+4.2 Caso planteado - Lista circular 
 
-Una matriz poco densa es aquella en la que la mayoría de sus posiciones contienen valores 0 o no contienen información relevante, mientras que solo algunas posiciones contienen datos.
+Se propone utilizar una lista circular para gestionar la asignación de tareas entre los integrantes de un equipo de trabajo. Cada integrante recibirá su turno y, cuando se llegue al último, el recorrido continuará automáticamente desde el primero.
+Por ejemplo, si el equipo está formado por Ana, Luis, María y Pedro, después del turno de Pedro se volverá al turno de Ana, repitiendo el ciclo mientras existan tareas pendientes.
 
-```
-[20   0   0   0]
-[ 0   0  15   0]
-[ 0   0   0   0]
-[ 0  18   0   0]
-```
-
-#### 4.3 Ejemplo aplicado al caso académico
-
-En el caso de los talleres estudiantiles, las filas representan aulas y las columnas bloques horarios. Si solamente algunas aulas tienen estudiantes registrados en determinados horarios, la matriz tendrá muchas posiciones con valor 0 y pocas con datos.
-
-Matriz completa de 4 aulas x 5 bloques (20 celdas):
-
-```
-          B1   B2   B3   B4   B5
-Aula 1  [ 20    0    0    0    0 ]
-Aula 2  [  0    0   15    0    0 ]
-Aula 3  [  0    0    0    0    0 ]
-Aula 4  [  0   18    0    0    0 ]
-```
-
-Solo 3 de las 20 celdas tienen datos (15 %), y el 85 % son ceros. Representación compacta, con índices desde 0:
-
-| Fila | Columna | Valor |
-|---|---|---|
-| 0 | 0 | 20 |
-| 1 | 2 | 15 |
-| 3 | 1 | 18 |
-
-Pseudocódigo para construir la representación compacta:
-
-```
-Para i desde 0 hasta 3:
-    Para j desde 0 hasta 4:
-        Si matriz[i][j] ≠ 0:
-            Agregar (i, j, matriz[i][j]) a la lista
-```
-
-#### 4.4 Justificación
-
-- Se evita almacenar y procesar posiciones sin información.
-- La matriz completa guarda 20 valores. La compacta guarda 3 registros de 3 datos (9 valores), por lo que usa menos de la mitad de memoria.
-- La ventaja crece si el sistema se amplía a más aulas y horarios, porque la cantidad de ceros crece más rápido que los datos reales.
-- Si casi todas las aulas estuvieran ocupadas en todos los horarios, la matriz completa sería mejor, porque cada dato compacto necesita 3 valores y el ahorro desaparecería.
-
+4.3 Conclusión de propuestas
+Se concluye que la lista doble es conveniente cuando el sistema necesita navegar en ambos sentidos, mientras la lista circular es útil cuando se requiere repetir un proceso de forma continua.
 
 
 ## 6. Matriz de participación
@@ -470,9 +425,10 @@ Para i desde 0 hasta 3:
 
 ## 8. Conclusiones
 
-- Una matriz poco densa es más conveniente que una completa cuando la mayoría de las combinaciones de aula y horario no tienen estudiantes, ya que la representación compacta ahorra memoria; si la ocupación fuera alta, la matriz completa sería mejor.
-- Los arreglos y las matrices son adecuados para esta primera etapa porque el tamaño de los datos es conocido (8 talleres, 4 aulas y 5 bloques horarios), lo que permite acceder a cada dato directamente por su índice.
-Los algoritmos sobre vectores y el recorrido de matrices por filas y columnas permiten registrar, consultar y organizar la información de inscritos y de ocupación de aulas de forma ordenada.
+- Una lista doblemente enlazada es más adecuada cuando el proceso necesita navegar en ambos sentidos, y una lista circular es más adecuada cuando el proceso es cíclico por naturaleza.
+- La inserción y eliminación al inicio de la lista son las operaciones más eficientes (0(1)), mientras que al final o en medio dependen de recorrer la lista hasta el punto de intervención (0(n)).
+- Las listas enlazadas permiten manejar una cantidad de solicitudes que cambia constantemente, a diferencia de las estructuras estáticas, porque los nodos se crean y eliminan de forma dinámica sin necesidad de definir un tamaño fijo desde el inicio.
+
 
 ---
 
