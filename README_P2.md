@@ -10,7 +10,7 @@
 | Integrante | Rol | Aporte principal |
 |---|---|---|
 | Mariagracia Cadillo Jiménez |   Coordinador | [Actividad1 |
-| [Nombre 2] | [Rol] | [Aporte] |
+| Mauricio Del Carpio | Integrante | Actividad 2 |
 | [Cristian Martin Correa Barriga] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
