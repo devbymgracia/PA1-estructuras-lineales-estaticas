@@ -10,7 +10,7 @@
 | Integrante | Rol | Aporte principal |
 |---|---|---|
 | Mariagracia Cadillo Jiménez | [Rol] | [Aporte] |
-| [Nombre 2] | [Rol] | [Aporte] |
+| Diana Romero Pariona | Integrante | Actividad 4 |
 | [Cristian Martin Correa Barriga] | [Rol] | [Aporte] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
@@ -236,46 +236,22 @@ public static Nodo eliminarPorId(Nodo cabeza, int id) {
 
 ### Actividad 4. Listas dobles y circulares
 
-#### 4.1 Situación para lista doble
+ACTIVIDAD 4. LISTAS DOBLES Y CIRCULARES
 
-En el sistema de solicitudes de atención, a veces el personal necesita revisar el historial hacia atrás, por ejemplo para ver cuál fue la solicitud anterior a una que se está resolviendo, sin recorrer la lista desde el inicio cada vez. Una lista doblemente enlazada permite moverse en ambos sentidos.
+4.1 Caso planteado - Lista doble
 
-```
-NULL <- [S1] <-> [S2] <-> [S3] <-> [S4] -> NULL
-```
+Se propone utilizar una lista doble para administrar las tareas registradas en el sistema. Cada tarea estará conectada con la tarea anterior y la siguiente, lo que permitirá recorrer la lista en ambos sentidos.
+Por ejemplo, si el sistema contiene las tareas Diseño, Programación, Pruebas y Entrega, el usuario podrá avanzar hacia la siguiente tarea o regresar a la anterior de manera sencilla.
 
-```java
-public class NodoDoble {
-    int id;
-    String motivo;
-    NodoDoble anterior;
-    NodoDoble siguiente;
-}
-```
+La lista doble es más adecuada que una lista simple porque permite desplazarse hacia adelante y hacia atrás sin tener que comenzar desde el primer nodo para regresar a una tarea anterior.
 
-#### 4.2 Situación para lista circular
+4.2 Caso planteado - Lista circular 
 
-El sistema también necesita un proceso de revisión continua: un supervisor recorre todas las solicitudes pendientes en orden, y al llegar a la última, debe volver a la primera para empezar un nuevo ciclo, sin reiniciar manualmente el recorrido.
+Se propone utilizar una lista circular para gestionar la asignación de tareas entre los integrantes de un equipo de trabajo. Cada integrante recibirá su turno y, cuando se llegue al último, el recorrido continuará automáticamente desde el primero.
+Por ejemplo, si el equipo está formado por Ana, Luis, María y Pedro, después del turno de Pedro se volverá al turno de Ana, repitiendo el ciclo mientras existan tareas pendientes.
 
-```
-   [S1] -> [S2] -> [S3] -> [S4]
-    ^                        |
-    |________________________|
-```
-
-```java
-public class NodoCircular {
-    int id;
-    String motivo;
-    NodoCircular siguiente;
-}
-// El siguiente del último nodo apunta al primer nodo, no a null
-```
-
-#### 4.3 Justificación
-
-- La **lista doble** conviene cuando el proceso necesita navegar en ambas direcciones, como revisar el historial hacia atrás. Una lista simple solo permite avanzar.
-- La **lista circular** conviene cuando el proceso es cíclico por naturaleza, como una revisión continua de turnos. La lista circular integra el ciclo de forma natural, sin necesidad de guardar aparte una referencia a la cabeza.
+4.3 Conclusión de propuestas
+Se concluye que la lista doble es conveniente cuando el sistema necesita navegar en ambos sentidos, mientras la lista circular es útil cuando se requiere repetir un proceso de forma continua.
 
 ## 6. Matriz de participación
 
