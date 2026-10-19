@@ -282,7 +282,7 @@ public class NodoCircular {
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
 | Mariagracia Cadillo Jiménez | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
-| [Nombre 2] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Mauricio Del Carpio Torres | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 | [Diana Romero Pariona] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
 
