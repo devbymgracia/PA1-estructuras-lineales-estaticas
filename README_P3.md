@@ -9,7 +9,7 @@
 
 | Integrante | Rol | Aporte principal |
 |---|---|---|
-| [Nombre 1] | [Rol] | [Aporte] |
+| Mariagracia Cadillo | Participante | Actividad 4 + video |
 | Mauricio Del Carpio | Participante | Actividad 1 + Video |
 | Diana Romero | Participante | Actividad 3 + Conclusiones + video |
 | [Cristian Correa] | [Participante] | [Actividad 2 + creacion del README + Informe + video] |
@@ -154,7 +154,36 @@ Cola (FIFO): El primer elemento ingresado es el primero en salir.
 | Procesamiento donde el último ingresado debe atenderse primero | Pila | Se utiliza una pila porque el elemento más reciente debe procesarse antes que los anteriores. Esto corresponde al comportamiento LIFO.  | 
 | Flujo de espera de trámites pendientes | Cola | Se utiliza una cola porque los trámites deben organizarse según su orden de llegada, garantizando una atención ordenada y evitando que los trámites más antiguos queden relegados. |
 
-La elección depende del orden en que deben procesarse los elementos. Las pilas son apropiadas cuando se necesita atender primero el elemento mas reciente, mientras que las colas son ideales cuando se requiere respetar el orden de llegada. Estas estructuras permiten organizar eficientemente los datos y optimizar los procesos de atención y procesamiento.
+Actividad 4. Comparación y argumentación
+Elaboren una comparación académica entre pila y cola considerando principio de funcionamiento, operaciones principales, forma de acceso y ventajas en contextos de aplicación. 
+Redacten una conclusión grupal argumentando por qué la 
+selección correcta de la estructura mejora la solución del problema.
+
+Criterio
+Pila (Stack)
+Cola (Queue)
+Forma de acceso
+Un solo extremo: el tope. La inserción se hace por el mismo lado.
+Dos extremos: se inserta por el final (rear) y se elimina por el frente (front).
+Principio de funcionamiento
+LIFO (Last In, First Out): el último en entrar es el primero en salir.
+FIFO (First In, First Out): el primero en entrar es el primero en salir.
+Ejemplos de aplicación
+Deshacer/rehacer en un editor, historial de navegación, evaluación de expresiones, llamadas a funciones (recursión).
+Cola de impresión, atención de solicitudes o tickets, turnos de atención, procesos en espera.
+Ventajas de contexto
+Ideal para revertir o deshacer acciones y para procesos anidados.
+Ideal para atender solicitudes o tickets, turnos de atención, procesos en espera.
+Analogía
+Una pila de datos: se toma el último que se colocó.
+Una fila de personas: atienden primero al que llegó primero.
+Operaciones principales
+push (apilar), pop (desapilar), peek /top (ver el tope), isEmpty.
+enqueue (encolar), dequeue (desencolar), front / peek (ver el frente), isEmpty.
+
+
+
+
 
 
 ## 4. Evidencias
@@ -169,7 +198,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
-| [Nombre 1] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Mariagracia Cadillo | Alta | Alta | Alta | Sí | Avtividad 4 + video |
 | Mauricio Del Carpio | Alta | Alta | Alta | Sí] | [Commits, avances, etc.] |
 | Diana Romero | Alta | Alta | Alta | Sí | Actividad 3 + Conclusiones + video |
 | [Cristian Correa] | [Alta] | [Alta] | [Alta] | [Sí] | [Actividad 2 + Creacion del README + Informe + video] |
