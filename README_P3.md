@@ -61,7 +61,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 |---|---|---|---|---|---|
 | [Nombre 1] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | Mauricio Del Carpio | Alta | Alta | Alta | Sí] | [Commits, avances, etc.] |
-| Diana Romero | Alta | Alta | Alta | Sí | Actividad 3 + video |
+| Diana Romero | Alta | Alta | Alta | Sí | Actividad 3 + Conclusiones + video |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 
