@@ -47,7 +47,25 @@ Estas solicitudes se procesan en el mismo orden en que fueron recibidas
 │   Ana Solicitud     │    Franco Solicitud    │   Carlos Solicitud    │
 
       → Orden de atención →
+La solicitud de Ana será atendida primero, seguido por Franco y finalmente Carlos.
 
+2.3. Algoritmos para encolar
+
+Para este ejemplo utilizaremos una cola de implementar un arreglo circular. Las variables “Frente, Final y Cantidad” que permiten controlar elementos almacenados.
+
+// 2.3. Encolar una solicitud
+    public void encolar(String solicitud) {
+        if (cantidad == capacidad) {
+            System.out.println("La cola esta llena");
+            return;
+        }
+
+        cola[finalCola] = solicitud;
+        finalCola = (finalCola + 1) % capacidad;
+        cantidad++;
+
+        System.out.println("Solicitud agregada correctamente");
+    }
 
 ### Actividad 3. Selección de estructura para situaciones reales
 
