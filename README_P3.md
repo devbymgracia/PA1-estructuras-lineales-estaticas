@@ -53,6 +53,7 @@ La solicitud de Ana será atendida primero, seguido por Franco y finalmente Carl
 
 Para este ejemplo utilizaremos una cola de implementar un arreglo circular. Las variables “Frente, Final y Cantidad” que permiten controlar elementos almacenados.
 
+'''
 // 2.3. Encolar una solicitud
     public void encolar(String solicitud) {
         if (cantidad == capacidad) {
@@ -66,6 +67,7 @@ Para este ejemplo utilizaremos una cola de implementar un arreglo circular. Las 
 
         System.out.println("Solicitud agregada correctamente");
     }
+''''
 
 ### Actividad 3. Selección de estructura para situaciones reales
 
