@@ -43,10 +43,11 @@ Para el ejemplo gráfico escogí tres estudiantes que presentan solicitudes de a
 3. Solicitud de Carlos
 Estas solicitudes se procesan en el mismo orden en que fueron recibidas
 
-┌────────────┬────────────┬────────────┐
-│ Ana        │ Luis       │ María      │
-│ Solicitud  │ Solicitud  │ Solicitud  │
-└────────────┴────────────┴────────────┘
+
+│   Ana     │    Luis    │   María    │
+│ Solicitud │ Solicitud  │ Solicitud  │
+
+      
       → Orden de atención →
 
 
