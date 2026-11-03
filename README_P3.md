@@ -26,6 +26,24 @@ Comprender y aplicar las estructuras de datos pila y cola mediante el diseño de
 **Solución desarrollada:**  
 Se desarrollaron algoritmos para apilar, desapilar, encolar, desencolar, visualizar el tope o frente y verificar si las estructuras están vacías. Asimismo, se compararon ambas estructuras para identificar su aplicación adecuada: la pila para revertir acciones recientes y la cola para atender solicitudes académicas según su orden de llegada.
 
+### Actividad 2. Cola FIFO
+
+2.1 ¿Qué es una cola FIFO?
+
+Es una estructura de datos que trabaja junto con el principio del Fifo “First in, First out” en otras palabras el primero en entrar es el primero en salir.
+
+Un ejemplo es sobre una unidad de servicios académicos, una cola permite organizar las solicitudes pendientes y deben atenderlas respetando  el orden de llegada.
+
+2.2 Representación gráfica de una cola
+
+Para el ejemplo gráfico escogí tres estudiantes que presentan solicitudes de atención:
+
+1. Solicitud de Ana
+2. Solicitud de Franco
+3. Solicitud de Carlos
+Estas solicitudes se procesan en el mismo orden en que fueron recibidas
+
+
 ### Actividad 3. Selección de estructura para situaciones reales
 
 #### 3.1 Determinación del uso de pilas o colas
