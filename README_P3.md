@@ -12,8 +12,8 @@
 | [Nombre 1] | [Rol] | [Aporte] |
 | Mauricio Del Carpio | Participante | Actividad 1 + Video |
 | Diana Romero | Participante | Actividad 3 + Conclusiones + video |
-| [Nombre 4] | [Rol] | [Aporte] |
-| [Nombre 5] | [Rol] | [Aporte] |
+| [Cristian Correa] | [Participante] | [Actividad 2 + creacion del README + Informe + video] |
+
 
 ## 2. Descripción y objetivo
 
@@ -172,8 +172,8 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 | [Nombre 1] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | Mauricio Del Carpio | Alta | Alta | Alta | Sí] | [Commits, avances, etc.] |
 | Diana Romero | Alta | Alta | Alta | Sí | Actividad 3 + Conclusiones + video |
-| [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
-| [Nombre 5] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Cristian Correa] | [Alta] | [Alta] | [Alta] | [Sí] | [Actividad 2 + Creacion del README + Informe + video] |
+
 
 ## 6. Video de exposición
 
