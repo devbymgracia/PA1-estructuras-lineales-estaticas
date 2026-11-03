@@ -1,0 +1,137 @@
+# README — Evaluación PA2
+
+> **Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial  
+> **Código:** 30710  
+> **Evaluación:** PA3
+> **Equipo:** Grupo 6  
+
+## 1. Integrantes
+
+| Integrante | Rol | Aporte principal |
+|---|---|---|
+| Mariagracia Cadillo Jiménez |   Coordinador | [Actividad4 |
+| Mauricio Del Carpio | Integrante | Actividad 1 |
+| [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 2] |
+| [Diana Romero Pariona] | [Integrante] | [Actividad 3] |
+
+## 2. Descripción y objetivo
+
+**Problema:**  
+Una organización necesita gestionar una secuencia dinámica de solicitudes de atención, donde constantemente ingresan nuevos casos, algunos se eliminan, otros deben reubicarse, y en ciertos procesos se necesita navegar en ambos sentidos o mantener un ciclo continuo de revisión.
+
+**Objetivo:**  
+Diseñar una solución usando listas enlazadas (simples, dobles y circulares) que permita representar, recorrer, insertar, buscar, modificar y eliminar solicitudes de forma dinámica.
+
+**Solución desarrollada:**  
+- **Fundamentos y representación (Actividad 1):** se explicó qué es una lista enlazada, su clasificación (simple, doble, circular) y se representó una lista de 5 solicitudes de atención.
+- **Recorrido e inserción (Actividad 2):** se diseñaron algoritmos de recorrido, e inserción al inicio, al final y después de un nodo dado.
+- **Búsqueda, modificación y eliminación (Actividad 3):** se diseñaron algoritmos de búsqueda por id, modificación de un nodo y eliminación con reajuste de enlaces, comparando la eficiencia según el punto de intervención.
+- **Listas dobles y circulares (Actividad 4):** se plantearon situaciones del caso donde conviene cada tipo de lista, con su representación gráfica y justificación.
+
+## 3. Estructura del repositorio
+
+```
+PA2-listas-enlazadas/
+├── README.md
+└── informe-PA2.pdf
+```
+
+## 4. Cómo revisar
+
+**Pasos de revisión:**
+1. Leer el desarrollo de cada actividad en la sección 5 de este README.
+2. Revisar el informe en PDF (`informe-PA2.pdf`) como respaldo.
+3. Consultar la matriz de participación en la sección 6.
+4. Ver el video de exposición (sección 7).
+
+## 5. Desarrollo de la evaluación
+
+### Actividad 1. Pila LIFO
+
+#### 1.1 
+
+-
+#### 1.2 
+
+### Actividad 2. Cola FIFO
+
+#### 2.1 ¿Qué es una cola FIFO?
+
+Es una estructura de datos que trabaja junto con el principio del Fifo “First in, First out” en otras palabras el primero en entrar es el primero en salir.
+
+Un ejemplo es sobre una unidad de servicios académicos, una cola permite organizar las solicitudes pendientes y deben atenderlas respetando  el orden de llegada.
+
+#### 2.2 Representación gráfica de una cola
+Para el ejemplo gráfico escogí tres estudiantes que presentan solicitudes de atención:
+
+1. Solicitud de Ana
+2. Solicitud de Franco
+3. Solicitud de Carlos
+
+Estas solicitudes se procesan en el mismo orden en que fueron recibidas
+
+   FRENTE                                   FINAL
+     ↓                                        ↓ 
+ANA SOLICITUD --> FRANCO SOLICITUD --> CARLOS SOLICITUD
+             --> ORDEN DE ATENCIÓN -->
+
+La solicitud de Ana será atendida primero, seguido por Franco y finalmente Carlos.
+
+#### 2.3 Algoritmos para encolar
+
+
+#### 2.4 Algoritmos para desencolar
+                                                 
+#### 2.5 Algoritmo para visualizar el frente
+
+
+#### 2.6 Algoritmo para verificar si la cola está vacía
+                                                 
+#### 2.7 Aplicación concreta de la cola en el caso propuesto
+
+                                                 
+### Actividad 3. Selección de estructura para situaciones reales
+
+#### 3.1 Determinación del uso de pilas o colas
+
+Las pilas y las colas son estructuras de datos que permiten organizar elementos según diferentes criterios de procedimiento. 
+
+Pila (LIPO): El último elemento ingresado es el primero en salir.
+Cola (FIFO): El primer elemento ingresado es el primero en salir.
+
+#### 3.2 Analisis de cada situación
+
+| Situación | Estructura | Justificación tecnica | 
+|---|---|---|
+| Registro de acciones recientes para revertir cambios | Pila | Se utiliza porque las acciones se deshacen en orden inverso al que fueron ejecutadas. La última acción realizada debe revertirse primero (LIFO). |
+| Atención de solicitudes en orden de llegada | Cola | Se utiliza una cola porque las solicitudes deben atenderse respetando su orden de ingreso. La primera solicitud registrada será la primera en procesarse (FIFO).  | 
+| Procesamiento donde el último ingresado debe atenderse primero | Pila | Se utiliza una pila porque el elemento más reciente debe procesarse antes que los anteriores. Esto corresponde al comportamiento LIFO.  | 
+| Flujo de espera de trámites pendientes | Cola | Se utiliza una cola porque los trámites deben organizarse según su orden de llegada, garantizando una atención ordenada y evitando que los trámites más antiguos queden relegados. |
+
+La elección depende del orden en que deben procesarse los elementos. Las pilas son apropiadas cuando se necesita atender primero el elemento mas reciente, mientras que las colas son ideales cuando se requiere respetar el orden de llegada. Estas estructuras permiten organizar eficientemente los datos y optimizar los procesos de atención y procesamiento.
+
+### Actividad 4. Comparación y argumentación
+
+#### 4.1 Situación para lista doble
+
+
+## 5. Matriz de participación
+
+| Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
+|---|---|---|---|---|---|
+| Mariagracia Cadillo Jiménez | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
+| Mauricio Del Carpio Torres | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
+| [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
+| [Diana Romero Pariona] | [Alta] | [Alta] | [Alta] | [Sí] | [Commits, avances, etc.] |
+
+## 6. Video de exposición
+
+**Video de YouTube:** [https://www.youtube.com/watch?v=z7T_DM1YDtM]
+
+## 7. Conclusiones
+
+- 
+                                                 
+---
+
+**Última actualización:** [13/10/2026]
