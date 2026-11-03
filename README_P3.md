@@ -154,10 +154,9 @@ Cola (FIFO): El primer elemento ingresado es el primero en salir.
 | Procesamiento donde el último ingresado debe atenderse primero | Pila | Se utiliza una pila porque el elemento más reciente debe procesarse antes que los anteriores. Esto corresponde al comportamiento LIFO.  | 
 | Flujo de espera de trámites pendientes | Cola | Se utiliza una cola porque los trámites deben organizarse según su orden de llegada, garantizando una atención ordenada y evitando que los trámites más antiguos queden relegados. |
 
-Actividad 4. Comparación y argumentación
-Elaboren una comparación académica entre pila y cola considerando principio de funcionamiento, operaciones principales, forma de acceso y ventajas en contextos de aplicación. 
-Redacten una conclusión grupal argumentando por qué la 
-selección correcta de la estructura mejora la solución del problema.
+### Actividad 4. Comparación y argumentación
+
+#### 4.1 Comparación entre pila y cola
 
 | Criterio | Pila (Stack) | Cola (Queue) |
 |---|---|---|
