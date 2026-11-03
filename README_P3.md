@@ -11,20 +11,20 @@
 |---|---|---|
 | [Nombre 1] | [Rol] | [Aporte] |
 | Mauricio Del Carpio | Participante | Actividad 1 + Video |
-| Diana Romero | Participante | Actividad 3 + 1 video |
+| Diana Romero | Participante | Actividad 3 + Conclusiones + video |
 | [Nombre 4] | [Rol] | [Aporte] |
 | [Nombre 5] | [Rol] | [Aporte] |
 
 ## 2. Descripción y objetivo
 
 **Problema:**  
-[Describir brevemente el problema trabajado.]
+Determinar cómo utilizar las estructuras de datos pila (LIFO) y cola (FIFO) para organizar las acciones y solicitudes de los estudiantes en una unidad de servicios académicos, considerando el orden correcto de procesamiento.
 
 **Objetivo:**  
-[Indicar qué busca resolver el proyecto.]
+Comprender y aplicar las estructuras de datos pila y cola mediante el diseño de algoritmos y representaciones gráficas, identificando sus características, operaciones principales y aplicaciones prácticas para resolver situaciones reales de manera eficiente.
 
 **Solución desarrollada:**  
-[Explicar brevemente la solución implementada.]
+Se desarrollaron algoritmos para apilar, desapilar, encolar, desencolar, visualizar el tope o frente y verificar si las estructuras están vacías. Asimismo, se compararon ambas estructuras para identificar su aplicación adecuada: la pila para revertir acciones recientes y la cola para atender solicitudes académicas según su orden de llegada.
 
 ### Actividad 3. Selección de estructura para situaciones reales
 
@@ -73,10 +73,11 @@ Todos los integrantes deben participar en la exposición con sus cámaras prendi
 
 ## 7. Conclusiones
 
-- [Conclusión 1]
-- [Conclusión 2]
-- [Conclusión 3]
+- Las pilas y las colas son estructuras de datos fundamentales que permiten organizar y procesar información de acuerdo con diferentes principios. La pila utiliza LIFO, mientras que la cola utiliza FIFO, lo que determina el orden en que se insertan y eliminan los elementos.
 
+- La aplicación de pilas y colas en los servicios académicos permite mejorar la organización de los procesos. La pila facilita la reversión de acciones recientes, mientras que la cola permite atender solicitudes respetando el orden de llegada, evitando desorganización en los procedimientos.
+
+- La correcta selección de una estructura de datos contribuye a desarrollar soluciones más eficientes, simples y ordenadas. Comprender las diferencias entre pila y cola permite elegir la estructura más adecuada según las necesidades del problema, optimizando las operaciones y reduciendo la complejidad innecesaria de los algoritmos.
 ---
 
-**Última actualización:** [DD/MM/AAAA]
+**Última actualización:** [03/11/2026]
