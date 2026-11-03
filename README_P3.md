@@ -159,30 +159,36 @@ Elaboren una comparación académica entre pila y cola considerando principio de
 Redacten una conclusión grupal argumentando por qué la 
 selección correcta de la estructura mejora la solución del problema.
 
-Criterio
-Pila (Stack)
-Cola (Queue)
-Forma de acceso
-Un solo extremo: el tope. La inserción se hace por el mismo lado.
-Dos extremos: se inserta por el final (rear) y se elimina por el frente (front).
-Principio de funcionamiento
-LIFO (Last In, First Out): el último en entrar es el primero en salir.
-FIFO (First In, First Out): el primero en entrar es el primero en salir.
-Ejemplos de aplicación
-Deshacer/rehacer en un editor, historial de navegación, evaluación de expresiones, llamadas a funciones (recursión).
-Cola de impresión, atención de solicitudes o tickets, turnos de atención, procesos en espera.
-Ventajas de contexto
-Ideal para revertir o deshacer acciones y para procesos anidados.
-Ideal para atender solicitudes o tickets, turnos de atención, procesos en espera.
-Analogía
-Una pila de datos: se toma el último que se colocó.
-Una fila de personas: atienden primero al que llegó primero.
-Operaciones principales
-push (apilar), pop (desapilar), peek /top (ver el tope), isEmpty.
-enqueue (encolar), dequeue (desencolar), front / peek (ver el frente), isEmpty.
+| Criterio | Pila (Stack) | Cola (Queue) |
+|---|---|---|
+| **Principio de funcionamiento** | LIFO (Last In, First Out): el último en entrar es el primero en salir. | FIFO (First In, First Out): el primero en entrar es el primero en salir. |
+| **Operaciones principales** | `push` (apilar), `pop` (desapilar), `peek` (ver el tope), `isEmpty`. | `enqueue` (encolar), `dequeue` (desencolar), `peek` (ver el frente), `isEmpty`. |
+| **Forma de acceso** | Un solo extremo: el tope. Se inserta y se elimina por el mismo lado. | Dos extremos: se inserta por el final y se elimina por el frente. |
+| **Analogía** | Una pila de platos: se toma el último que se colocó. | Una fila de personas: atienden primero al que llegó primero. |
+| **Ventajas en contexto** | Ideal para revertir o deshacer acciones y para procesos anidados. | Ideal para atender solicitudes en orden de llegada, de forma justa. |
+| **Ejemplos de aplicación** | Deshacer/rehacer en un editor, historial de navegación, llamadas a funciones (recursión). | Cola de impresión, atención de solicitudes, turnos de atención. |
 
+|
 
+**Representación gráfica**
 
+```
+PILA (LIFO)                COLA (FIFO)
+
+  push ↓   ↑ pop           enqueue →  [A][B][C][D]  → dequeue
+  ┌─────┐                              final      frente
+  │  D  │ ← tope
+  │  C  │
+  │  B  │
+  │  A  │
+  └─────┘
+```
+
+En ambas estructuras, las operaciones principales tienen un costo de O(1).
+
+#### 4.2 Conclusión grupal
+
+La selección correcta de la estructura mejora la solución porque hace que la forma de guardar los datos coincida con la forma en que el problema los procesa. La cola (FIFO) conviene cuando se debe atender en orden de llegada, y la pila (LIFO) cuando hay que deshacer o revertir el último paso. Elegir mal obliga a agregar lógica extra, más compleja y propensa a errores, mientras que la estructura correcta mantiene las operaciones simples y eficientes.
 
 
 
