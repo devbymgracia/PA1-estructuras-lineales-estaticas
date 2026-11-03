@@ -68,7 +68,74 @@ Para este ejemplo utilizaremos una cola de implementar un arreglo circular. Las 
         System.out.println("Solicitud agregada correctamente");
     }
 ```
+2.4 Algoritmos para desencolar
+El objetivo de desencolar es retirar la solicitud que está frente de la cola.
 
+```
+// 2.4. Desencolar una solicitud
+    public void desencolar() {
+        if (cantidad == 0) {
+            System.out.println("La cola esta vacia");
+            return;
+        }
+
+        String solicitud = cola[frente];
+        cola[frente] = null;
+
+        frente = (frente + 1) % capacidad;
+        cantidad--;
+
+        System.out.println("Solicitud atendida: " + solicitud);
+
+        if (cantidad == 0) {
+            frente = 0;
+            finalCola = 0;
+        }
+    }
+```
+
+2.5 Algoritmo para visualizar el frente
+
+Aquí consultamos cuál es la siguiente solicitud que debe atenderse sin retirarla.
+
+```
+// 2.5. Visualizar el frente de la cola
+    public void verFrente() {
+        if (cantidad == 0) {
+            System.out.println("La cola esta vacia");
+        } else {
+            System.out.println("Siguiente solicitud: " + cola[frente]);
+        }
+    }
+```
+2.6 Algoritmo para verificar si la cola está vacía
+
+```
+// 2.6. Verificar si la cola esta vacia
+    public void colaVacia() {
+        if (cantidad == 0) {
+            System.out.println("La cola esta vacia");
+        } else {
+            System.out.println("La cola contiene solicitudes pendientes");
+        }
+    }
+```
+2.7 Aplicación concreta de la cola en el caso propuesto
+
+La cola se utiliza para administrar las solicitudes académicas que esperan a ser atendidas.
+
+Las solicitudes llegan en este orden:
+
+1. Solicitud de Matrícula.
+2. Solicitud de constancia de estudios
+3. Solicitud de actualización de datos
+
+El sistema atenderá primero la solicitud de matrícula, luego la constancia y finalmente la actualización de datos.
+
+Motivo:
+La cola es preferible porque su principio FIFO permite atender las solicitudes según  su orden de llegada. esto facilita una gestión organizada de los trámites pendientes y evita alterar la secuencia de atención. 
+
+    
 ### Actividad 3. Selección de estructura para situaciones reales
 
 #### 3.1 Determinación del uso de pilas o colas
