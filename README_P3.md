@@ -39,11 +39,11 @@ Para el caso se registran tres acciones del estudiante, en este orden:
 2. Subida de constancia de estudios
 3. Actualización de datos
 
-BASE                            TOPE (TOP)
+BASE                                -                      TOPE (TOP)
                                             
 REGISTRO DE MATRICULA --> CONSTANCIA DE ESTUDIOS --> ACTUALIZACIÓN DE DATOS
                        
-                        --> ORDEN DE ATENCIÓN -->
+                         --> ORDEN DE ATENCIÓN -->
 
 ### 1.3 Algoritmo para apilar (push)
 Se implementa con un arreglo. La variable tope indica la posición del último elemento (-1 si la pila está vacía).
