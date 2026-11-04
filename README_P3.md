@@ -26,6 +26,112 @@ Comprender y aplicar las estructuras de datos pila y cola mediante el diseño de
 **Solución desarrollada:**  
 Se desarrollaron algoritmos para apilar, desapilar, encolar, desencolar, visualizar el tope o frente y verificar si las estructuras están vacías. Asimismo, se compararon ambas estructuras para identificar su aplicación adecuada: la pila para revertir acciones recientes y la cola para atender solicitudes académicas según su orden de llegada.
 
+### Actividad 1. Pila LIFO 
+Expliquen qué caracteriza a una estructura LIFO y desarrollen una representación gráfica de una pila para el caso propuesto. Diseñen algoritmos para apilar, desapilar, visualizar el elemento del tope y verificar si la pila está vacía. Indiquen una aplicación concreta del caso donde la pila sea la estructura más adecuada. 
+
+### 1.1 ¿Qué es una pila LIFO?
+Una pila es una estructura de datos que sigue el principio LIFO (“Last In, First Out”): el último elemento en entrar es el primero en salir. Todas las operaciones se hacen por un solo extremo, llamado tope. Para llegar a un elemento del fondo hay que retirar antes los que están encima.
+Ejemplo: en una unidad de servicios académicos, el sistema guarda las acciones realizadas sobre el registro de un estudiante. Si hay que revertir cambios, se deshace primero la acción más reciente.
+
+### 1.2 Representación gráfica de una pila
+Para el caso se registran tres acciones del estudiante, en este orden:
+1. Registro de matrícula
+2. Subida de constancia de estudios
+3. Actualización de datos
+
+    BASE                                  TOPE (TOP)
+     ↓                                        ↓ 
+REGISTRO DE MATRICULA --> CONSTANCIA DE ESTUDIOS --> aCTUALIZACIÓN DE DATOS
+                        --> ORDEN DE ATENCIÓN -->
+
+### 1.3 Algoritmo para apilar (push)
+Se implementa con un arreglo. La variable tope indica la posición del último elemento (-1 si la pila está vacía).
+
+```
+// 1.3. Apilar una acción
+    public void apilar(String accion) {
+        if (tope == capacidad - 1) {
+            System.out.println("La pila esta llena");
+            return;
+        }
+
+        tope++;
+        pila[tope] = accion;
+
+        System.out.println("Solicitud apilada correctamente");
+    }
+```
+### 1.4 Algoritmo para desapilar (pop)
+El objetivo es retirar la acción que está en el tope.
+```
+// 1.4. Desapilar una acción
+    public void desapilar() {
+        if (tope == - 1) {
+            System.out.println("La pila esta vacia");
+            return;
+        }
+
+        String accion = pila[tope];
+        pila[tope] = null;
+        tope--;
+
+        System.out.println("Accion revertida: " + accion);
+    }
+```
+
+### 1.5 Algoritmo para visualizar el tope (peek)
+Permite consultar cuál fue la última acción registrada sin retirarla
+
+```
+// 1.5. Visualizar el tope de la pila
+    public void verTope() {
+        if (tope == - 1) {
+            System.out.println("La pila esta vacia");
+        } else {
+
+        System.out.println("Ultima accion: " + pila[tope]);
+    }
+}
+```
+
+### 1.6 Algoritmo para verificar si la pila está vacía (isEmpty) 
+
+```
+// 1.6. Verificar si la pila esta vacia
+    public void pilaVacia() {
+        if (tope == - 1) {
+            System.out.println("La pila esta vacia");
+        } else {
+
+        System.out.println("La pila contiene acciones registradas");
+    }
+}
+```
+Atributos necesarios de la clase: 
+
+```
+private String[] pila;
+private int tope = -1;
+private int capacidad;
+
+public Pila(int capacidad) {
+      this.capacidad = capacidad;
+      this.pila = new String[capacidad];
+}
+```
+
+### 1.7 Aplicación concreta de la pila en el caso propuesto
+La pila se utiliza para llevar el historial de acciones recientes del estudiante en el sistema académico y permitir deshacer cambios.
+Las acciones se registran en este orden:
+      1. Registro de matrícula
+      2. Subida de constancia de estudios
+      3. Actualización de datos
+      
+Si el estudiante comete un error y pide revertir, el sistema deshace primero la actualización de datos, luego la constancia y, por último, la matrícula.
+
+Motivo: la pila es la estructura más adecuada porque su principio LIFO coincide con la forma en que se revierten los cambios: siempre se deshace primero lo último que se hizo. Con una cola habría que recorrer o reordenar los elementos para llegar a la acción más reciente, lo que añade lógica innecesaria. Con la pila, apilar y desapilar tienen costo O(1).
+
+
 ### Actividad 2. Cola FIFO
 
 2.1 ¿Qué es una cola FIFO?
