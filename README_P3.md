@@ -39,7 +39,7 @@ Para el caso se registran tres acciones del estudiante, en este orden:
 2. Subida de constancia de estudios
 3. Actualización de datos
 
-BASE ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTOPE (TOP)
+ㅤㅤㅤㅤBASE ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤTOPE (TOP)
                                             
 REGISTRO DE MATRICULA --> CONSTANCIA DE ESTUDIOS --> ACTUALIZACIÓN DE DATOS
                        
