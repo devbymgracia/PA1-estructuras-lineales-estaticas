@@ -18,8 +18,8 @@
 ## 2. Descripción y objetivo
 
 Actividad 1. Recursividad aplicada
+
 Actividad 2. Ordenamiento recursivo 
-Actividad 3. Modelado del problema mediante grafos
 
 ACTIVIDAD 3. MODELADO DEL PROBLEMA MEDIANTE GRAFOS
 
