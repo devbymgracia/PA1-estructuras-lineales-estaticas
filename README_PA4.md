@@ -21,6 +21,13 @@ Actividad 1. Recursividad aplicada
 
 Actividad 2. Ordenamiento recursivo 
 
+2.1 Algoritmo Merge Sort
+
+Para el ordenar la información de las ubicaciones del campus utilizaremos el algoritmo Merge Sort
+
+Este algoritmo utiliza el principio de divide y vencerás, es una frase usada por el propio Julio Cesar y el resto de conquistadores, lo que quiere decir es dividir una lista de elementos en partes más pequeñas, ordena cada parte y finalmente combina los resultados para obtener una lista ordenada.
+
+
 ACTIVIDAD 3. MODELADO DEL PROBLEMA MEDIANTE GRAFOS
 
 3.1 Modelo del grafo
