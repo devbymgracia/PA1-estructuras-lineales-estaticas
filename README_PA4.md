@@ -11,7 +11,7 @@
 |---|---|---|
 | [Nombre 1] | [Rol] | [Aporte] |
 | Mauricio Del Carpio Torres | Integrante | Actividad 3 |
-| [Nombre 3] | [Rol] | [Aporte] |
+| [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 2] |
 | [Nombre 4] | [Rol] | [Aporte] |
 
 
@@ -79,7 +79,204 @@ Después combinar todas las partes obtenemos:
 -Laboratorios
 ```
 2.3 Algoritmo Merge Sort
+```
+public class MergeSortCampus {
+    // Metodo principal de ordenamiento
+    public static void mergeSort(String[] datos) {
 
+        // Caso base
+        if (datos.length <= 1) {
+            return;
+        }
+
+        // Dividir la lista en dos partes
+        int mitad = datos.length / 2;
+
+        String[] izquierda =
+                Arrays.copyOfRange(datos, 0, mitad);
+
+        String[] derecha =
+                Arrays.copyOfRange(datos, mitad, datos.length);
+
+        // Llamadas recursivas
+        mergeSort(izquierda);
+        mergeSort(derecha);
+
+        // Combinar las partes ordenadas
+        mezclar(datos, izquierda, derecha);
+    }
+```
+
+Función para combinar listas:
+
+```
+public static void mezclar(
+            String[] datos,
+            String[] izquierda,
+            String[] derecha) {
+
+        int i = 0;
+        int j = 0;
+        int k = 0;
+
+        while (i < izquierda.length &&
+                j < derecha.length) {
+
+            if (izquierda[i].compareToIgnoreCase(
+                    derecha[j]) <= 0) {
+
+                datos[k] = izquierda[i];
+                i++;
+
+            } else {
+
+                datos[k] = derecha[j];
+                j++;
+            }
+
+            k++;
+        }
+
+        // Copiar elementos restantes de izquierda
+        while (i < izquierda.length) {
+            datos[k] = izquierda[i];
+            i++;
+            k++;
+        }
+
+        // Copiar elementos restantes de derecha
+        while (j < derecha.length) {
+            datos[k] = derecha[j];
+            j++;
+            k++;
+        }
+```
+
+2.4 Script de MergeSortCampus
+
+```
+package com.lideratec;
+
+import java.util.Arrays;
+
+public class MergeSortCampus {
+    // Metodo principal de ordenamiento
+    public static void mergeSort(String[] datos) {
+
+        // Caso base
+        if (datos.length <= 1) {
+            return;
+        }
+
+        // Dividir la lista en dos partes
+        int mitad = datos.length / 2;
+
+        String[] izquierda =
+                Arrays.copyOfRange(datos, 0, mitad);
+
+        String[] derecha =
+                Arrays.copyOfRange(datos, mitad, datos.length);
+
+        // Llamadas recursivas
+        mergeSort(izquierda);
+        mergeSort(derecha);
+
+        // Combinar las partes ordenadas
+        mezclar(datos, izquierda, derecha);
+    }
+
+    // Metodo para combinar las listas
+    public static void mezclar(
+            String[] datos,
+            String[] izquierda,
+            String[] derecha) {
+
+        int i = 0;
+        int j = 0;
+        int k = 0;
+
+        while (i < izquierda.length &&
+                j < derecha.length) {
+
+            if (izquierda[i].compareToIgnoreCase(
+                    derecha[j]) <= 0) {
+
+                datos[k] = izquierda[i];
+                i++;
+
+            } else {
+
+                datos[k] = derecha[j];
+                j++;
+            }
+
+            k++;
+        }
+
+        // Copiar elementos restantes de izquierda
+        while (i < izquierda.length) {
+            datos[k] = izquierda[i];
+            i++;
+            k++;
+        }
+
+        // Copiar elementos restantes de derecha
+        while (j < derecha.length) {
+            datos[k] = derecha[j];
+            j++;
+            k++;
+        }
+    }
+
+    public static void main(String[] args) {
+
+        String[] lugares = {
+                "Laboratorios",
+                "Entrada",
+                "Auditorio",
+                "Cafeteria",
+                "Biblioteca",
+                "Administracion"
+        };
+
+        System.out.println("Lugares originales:");
+
+        for (String lugar : lugares) {
+            System.out.println(lugar);
+        }
+
+        mergeSort(lugares);
+
+        System.out.println("\nLugares ordenados:");
+
+        for (String lugar : lugares) {
+            System.out.println(lugar);
+        }
+    }
+}
+```
+2.5 Resultado de ejecucion
+Lista desordenada:
+
+```
+Laboratorios
+Entrada
+Auditorio
+Cafeteria
+Biblioteca
+Administracion
+```
+
+Lista Ordenada:
+
+```
+Administracion
+Auditorio
+Biblioteca
+Cafeteria
+Entrada
+Laboratorios
+```
 
 ACTIVIDAD 3. MODELADO DEL PROBLEMA MEDIANTE GRAFOS
 
@@ -140,7 +337,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 |---|---|---|---|---|---|
 | [Nombre 1] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 | Mauricio Del Carpio | Alta | Alta | Alta | Sí | [Commits, avances, etc.] |
-| [Nombre 3] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Actividad 2 + Video + Informe + README] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
 
 
