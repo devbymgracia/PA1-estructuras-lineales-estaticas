@@ -30,13 +30,55 @@ Este algoritmo utiliza el principio de divide y vencerás, es una frase usada po
 ```
 Datos Iniciales:                                   Resultado Esperado:
 
--Laboratorios                                      -Administración
--Entrada                                              -Auditorio
--Auditorio                                            -Biblioteca
--Cafetería                                           -Cafeteria
--Biblioteca                                          -Entrada
--Administración                                  -Laboratorios
+-Laboratorios                                     -Administración
+-Entrada                                          -Auditorio
+-Auditorio                                        -Biblioteca
+-Cafetería                                        -Cafeteria
+-Biblioteca                                       -Entrada
+-Administración                                   -Laboratorios
 ```
+2.2 Funcionamiento paso a paso
+
+Paso 1:
+
+Primero dividimos la lista original en dos partes.
+
+```
+[Laboratorios, Entrada, Auditorio]
+
+[Cafetería, Biblioteca, Administración]
+```
+
+Paso 2: División en elementos individuales
+
+Vamos a seguir dividiendo las listas hasta que cada tenga un solo elemento.
+```
+[Laboratorios]        [Entrada]           [Auditorio]
+
+[Cafetería]           [Biblioteca]        [Administración]
+```
+
+Paso 3: Comparación y Combinación
+
+Comparamos elementos y las combinamos siguiendo el orden alfabético.
+```
+[Laboratorios] + [Entrada]
+
+[Entrada, Laboratorios]
+```
+
+Paso 4: Resultado final
+
+Después combinar todas las partes obtenemos:
+```
+-Administración
+-Auditorio
+-Biblioteca
+-Cafetería
+-Entrada
+-Laboratorios
+```
+2.3 Algoritmo Merge Sort
 
 
 ACTIVIDAD 3. MODELADO DEL PROBLEMA MEDIANTE GRAFOS
