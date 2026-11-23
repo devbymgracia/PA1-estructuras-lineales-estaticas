@@ -9,7 +9,7 @@
 
 | Integrante | Rol | Aporte principal |
 |---|---|---|
-| [Nombre 1] | [Rol] | [Aporte] |
+| Diana Romero Pariona | Integrante | Actividad 1 |
 | Mauricio Del Carpio Torres | Integrante | Actividad 3 |
 | [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 2] |
 | [Nombre 4] | [Rol] | [Aporte] |
@@ -384,7 +384,7 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
-| [Nombre 1] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Diana Romero Pariona | Alta | Alta| Alta| Sí | Actividad 1 + video + informe |
 | Mauricio Del Carpio | Alta | Alta | Alta | Sí | [Commits, avances, etc.] |
 | [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Actividad 2 + Video + Informe + README] |
 | [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
