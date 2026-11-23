@@ -19,6 +19,55 @@
 
 Actividad 1. Recursividad aplicada
 
+1.1 ¿Qué es la recursividad?
+La recursividad es una técnica de programación en la que una función o algoritmo se llama a sí mismo para resolver un problema. En cada llamada, el problema se reduce a una versión más pequeña o sencilla hasta llegar a una condición que permite detener las llamadas.
+
+1.2 ¿Cómo se relaciona con el principio divide y vencerás?
+La recursividad se relaciona con el principio de divide y vencerás, porque ambos permiten resolver problemas complejos dividiéndolos en partes más pequeñas y fáciles de solucionar.
+
+Este principio tiene tres pasos:
+Dividir: separar el problema principal en problemas más pequeños.
+Resolver: solucionar cada problema mediante llamadas recursivas.
+Combinar: reunir los resultados para obtener la solución final.
+
+1.3 Diseño de un algoritmo recursivo aplicado al caso
+
+Caso propuesto: Registro y procesamiento de notas de estudiantes.
+Algoritmo SumarNotas(notas, cantidad)
+
+    Si cantidad = 0 Entonces
+        Retornar 0
+    FinSi
+
+    Retornar notas[cantidad - 1] +
+             SumarNotas(notas, cantidad - 1)
+
+FinAlgoritmo
+
+
+Ejemplo de ejecución:
+Supongamos que un estudiante tiene las siguientes calificaciones:
+Nota 1: 15
+Nota 2: 18
+Nota 3: 16
+Nota 4: 14
+
+El algoritmo realiza las siguientes operaciones:
+
+SumarNotas([15,18,16,14], 4)
+
+= 14 + SumarNotas([15,18,16], 3)
+= 14 + 16 + SumarNotas([15,18], 2)
+= 14 + 16 + 18 + SumarNotas([15], 1)
+= 14 + 16 + 18 + 15 + SumarNotas([], 0)
+= 63
+
+4. Identificación de los elementos de la recursividad
+| Elemento | Explicación |
+| Caso base | Cuando la cantidad de notas es igual a 0, el algoritmo devuelve 0.|
+| Caso recursivo | Se suma la última nota y se vuelve a llamar a la función con una cantidad menor de notas.|
+| Condición de finalización | Las llamadas terminan cuando la cantidad de notas llega a 0.| 
+
 Actividad 2. Ordenamiento recursivo 
 
 2.1 Algoritmo Merge Sort
