@@ -12,7 +12,7 @@
 | Diana Romero Pariona | Integrante | Actividad 1 |
 | Mauricio Del Carpio Torres | Integrante | Actividad 3 |
 | [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 2] |
-| [Nombre 4] | [Rol] | [Aporte] |
+| Mariagracia Cadillo Jiménez | Integrante | Actividad 4 |
 
 
 ## 2. Descripción y objetivo
@@ -370,7 +370,38 @@ Resultado: la ruta óptima es E-B-L con 270 m (E-AD-B-L también mide 270 m). A*
 
 Relación con la IA: A* es un ejemplo de búsqueda heurística, porque usa conocimiento del problema para decidir hacia dónde buscar. Esto permite que el módulo de orientación responda rápido a consultas como "¿cómo llego al laboratorio?", igual que en mapas, videojuegos y robots.
 
-Actividad 4. Argumentación final 
+
+### Actividad 4. Argumentación final
+
+#### 4.1 Comparación de las alternativas
+
+Comparamos DFS, BFS y A* sobre el mismo problema: llegar de la Entrada (E) al Laboratorio de cómputo (L) en el grafo del campus.
+
+| Criterio | DFS | BFS | A* |
+|---|---|---|---|
+| **Cómo recorre el grafo** | Avanza por una rama hasta el final y retrocede (pila o recursión). | Explora por niveles (cola). | Expande el nodo con menor f(n) = g(n) + h(n). |
+| **Ruta que obtiene de E a L** | Puede hallar C-AU-P-L (310 m), peor que la óptima. | E-B-L, la de menos tramos (2 aristas). | E-B-L con 270 m, la de menor distancia. |
+| **¿Considera los metros?** | No. | No: solo cuenta tramos. | Sí: usa g(n) y una estimación h(n). |
+| **Nodos explorados** | Puede recorrer ramas innecesarias. | Explora por niveles, incluso nodos alejados de la meta. | Solo 2 nodos (E y B): no exploró cafetería ni auditorio. |
+| **Limitación** | La primera ruta que encuentra no es la más corta. | Ignora las distancias y usa más memoria. | Necesita una buena heurística (aquí, la distancia en línea recta). |
+| **Cuándo conviene en el campus** | Verificar que todas las ubicaciones sean alcanzables o listar rutas de evacuación. | Pasar por la menor cantidad de edificios. | Guiar a un estudiante a un destino concreto por la ruta más corta. |
+
+#### 4.2 Solución recomendada
+
+Recomendamos implementar **A\*** como algoritmo principal del módulo de orientación, porque el sistema debe encontrar la ruta más conveniente entre un origen y un destino específico. En nuestro caso, A* obtuvo la ruta óptima de 270 m expandiendo solo 2 nodos, mientras que DFS pudo devolver una ruta de 310 m y BFS, aunque halló E-B-L, no tiene en cuenta las distancias y podría equivocarse en otro grafo.
+
+Como apoyo, proponemos usar **BFS** cuando el estudiante quiera pasar por la menor cantidad de edificios, y **DFS** para verificar que todas las ubicaciones sean alcanzables o para explorar rutas alternativas. Para mostrar las ubicaciones ordenadas, usamos **Merge Sort**, un algoritmo recursivo de divide y vencerás con costo O(n log n), que ordena la lista de lugares del campus por nombre.
+
+#### 4.3 Relación con aplicaciones básicas de IA
+
+- **Búsqueda heurística:** A* usa conocimiento del problema (h(n)) para decidir hacia dónde buscar, en lugar de probar todas las opciones, igual que un agente inteligente que toma decisiones informadas.
+- **Navegación y mapas:** el módulo de orientación modela el campus como un grafo y calcula la mejor ruta, igual que las aplicaciones de mapas.
+- **Videojuegos y robots:** A* se usa para que personajes y robots encuentren su camino hacia una meta evitando recorridos innecesarios.
+- **Asistentes virtuales:** un asistente del campus podría responder "¿cómo llego al laboratorio?" con una ruta calculada y justificada.
+
+#### 4.4 Conclusión técnica
+
+Cada algoritmo responde a una necesidad distinta: DFS explora, BFS busca el recorrido con menos tramos y A* llega a una meta específica de forma eficiente usando una heurística. Elegir el algoritmo según el contexto, y no uno solo para todo, es lo que hace que la solución sea eficiente y justificable. Por eso recomendamos A* como núcleo del módulo, apoyado en BFS y DFS para consultas puntuales, y en Merge Sort para organizar la información del campus.
 
 ## 4. Evidencias
 
