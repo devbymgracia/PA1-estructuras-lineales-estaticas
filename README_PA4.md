@@ -423,16 +423,16 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 
 ## 6. Video de exposición
 
-**Video público de YouTube:** [PEGAR AQUÍ EL ENLACE]
+**Video público de YouTube:** [https://youtu.be/dATz26iOGr0?si=1K-DyHgRAem2MF75]
 
 Todos los integrantes deben participar en la exposición con sus cámaras prendidas y explicar el procedimiento, la solución desarrollada y las decisiones tomadas.
 
 ## 7. Conclusiones
 
-- [Conclusión 1]
-- [Conclusión 2]
-- [Conclusión 3]
-
+- [La recursividad permite recorrer las ubicaciones del campus de manera organizada, evitando repetir lugares mediante una estructura de control de visitados. Además, facilita la implementación de algoritmos que trabajan con estructuras como árboles y grafos.]
+- [El algoritmo Merge Sort es una alternativa adecuada para organizar alfabéticamente las ubicaciones del campus. Su enfoque recursivo permite dividir el conjunto de datos en partes pequeñas y obtener finalmente una lista ordenada de manera eficiente.]
+- [Los grafos permiten representar las ubicaciones y conexiones del campus. DFS facilita la exploración de las ubicaciones, BFS permite encontrar recorridos con menor cantidad de conexiones cuando estas tienen el mismo costo y A* permite buscar rutas considerando las distancias y una estimación hacia el destino.]
+- .[En conclusión, la integración de estos algoritmos permite desarrollar una solución tecnológica que facilita la orientación dentro de una institución educativa y demuestra cómo las estructuras de datos y los algoritmos pueden aplicarse en problemas reales.]
 ---
 
-**Última actualización:** [DD/MM/AAAA]
+**Última actualización:** [24/11/2026]
