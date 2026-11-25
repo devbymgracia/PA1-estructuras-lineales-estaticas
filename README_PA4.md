@@ -11,7 +11,7 @@
 |---|---|---|
 | Diana Romero Pariona | Integrante | Actividad 1 |
 | Mauricio Del Carpio Torres | Integrante | Actividad 3 |
-| [Cristian Martin Correa Barriga] | [Integrante] | [Actividad 2] |
+| Cristian Martin Correa Barriga | Integrante | Actividad 2 |
 | Mariagracia Cadillo Jiménez | Integrante | Actividad 4 |
 
 
@@ -415,10 +415,10 @@ Agregar aquí capturas, resultados, pruebas o enlaces que demuestren el funciona
 
 | Integrante | Desarrollo | Pruebas | Documentación | Exposición | Evidencia de participación |
 |---|---|---|---|---|---|
-| Diana Romero Pariona | Alta | Alta| Alta| Sí | Actividad 1 + video + informe |
-| Mauricio Del Carpio | Alta | Alta | Alta | Sí | [Commits, avances, etc.] |
-| [Cristian Martin Correa Barriga] | [Alta] | [Alta] | [Alta] | [Sí] | [Actividad 2 + Video + Informe + README] |
-| [Nombre 4] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Alta/Media/Baja] | [Sí/No] | [Commits, avances, etc.] |
+| Diana Romero Pariona | Alta | Alta| Alta| Sí | Actividad 1 + video + informe +README |
+| Mauricio Del Carpio | Alta | Alta | Alta | Sí | Actividad 3 + video + informe + README |
+| Cristian Martin Correa Barriga | Alta | Alta | Alta | Sí | Actividad 2 + Video + Informe + README |
+| Mariagracia Cadillo Jiménez | Alta | Alta | Alta | Sí | Actividad 4 + video + informe + READ ME |
 
 
 ## 6. Video de exposición
